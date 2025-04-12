@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--===== Font Awesome =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--===== Main CSS =====-->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+
+    <!--===== emailjs =====-->
+   <!-- EmailJS SDK -->
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<!-- Initialize EmailJS -->
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("Q39WEKY-zVjmcZulH"); // <-- Replace this with your actual EmailJS public key
+
+  // Form submission handler
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_143lrpa", "template_i7qjvki", this)
+      .then(() => {
+        alert("Message sent successfully!");
+        form.reset();
+      }, (error) => {
+        console.error("FAILED...", error);
+        alert("Something went wrong. Please try again.");
+      });
+  });
+});
+</script>
+
+
+
+</head>
+<body>
+      <!--===== Navbar Start =====-->
+      <nav class="navbar">
+          <div class="container">
+              <div class="row justify-content-between">
+                  <div class="logo"><a href="index.html">Free<span>Lancer</span><br>Web<span>Developer</span></a></div>
+                  <div class="links">
+                  <ul class="menu">
+                      <li class="nav-item"><a href="#home" class="nav-link active">Home <span></span></a></li>
+                      <li class="nav-item"><a href="#about" class="nav-link">About <span></span></a></li>
+                      <li class="nav-item"><a href="#services" class="nav-link">Services <span></span></a></li>
+                      <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio <span></span></a></li>
+                      <li class="nav-item"><a href="#pricing" class="nav-link">Pricing <span></span></a></li>
+                      <li class="nav-item"><a href="#contact" class="nav-link">Contact <span></span></a></li>
+                  </ul>
+                  </div>
+                  <div class="menu-btn">
+                      <i class="fas fa-bars"></i>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      <!--===== Navbar End =====-->
+      <!--===== Home Section Start =====-->
+      <section class="home-section" id="home">
+          <ul class="header-social"> <!--===== Header Social =====-->
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="home-text">
+                      <h4>Hello</h4>
+                      <h1>Bhanu Pratap Singh</h1>
+                      <span>Professional Freelancer Web Developer</span>
+                      <p>Hi! I'm a freelance Web Developer who loves building sleek, functional websites that bring your vision to life — fast, reliable, and pixel-perfect.
+
+                      </p>
+                           <a href="#" class="btn btn-1">purchase now</a>
+                  </div>
+                  <div class="home-image">
+                      <div class="img-box">
+                          <img src="images/portfolio/portfolia11.png" height="500" width="1" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="header-hero-shape"></div> <!--===== Hero Shape =====-->
+      </section>
+      <!--===== Home Section End =====-->
+      <!--===== About Section Start =====-->
+      <section class="about-section section-padding" id="about">
+          <div class="container">
+              <div class="row align-items-center justify-content-center">
+                  <div class="about-image">
+                      <div class="img-box">
+                          <img src="images/about_hero.png" alt="">
+                          <div class="about-shape"></div>
+                      </div>
+                  </div>
+                  <div class="about-content">
+                      <div class="section-title">
+                          <h5 class="sub-title">About</h5>
+                          <h3 class="main-title">Why You Hire Me?</h3>
+                          <ul class="line">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                          </ul>
+                      </div> <!--===== Section Title =====-->
+                      <p>I’m a freelance web developer dedicated to crafting responsive, high-performance, and visually stunning websites. I combine clean code with intuitive design to create seamless digital experiences that drive results. With a focus on client collaboration, timely delivery, and scalable solutions, I transform ideas into impactful online presences. Let’s build something great together!</p>
+                          <div class="about-skills">
+                              <div class="skill-item">
+                                  <div class="skill-header">
+                                      <h6 class="skill-title">Best-design</h6>
+                                      <div class="skill-percentage">
+                                          <p><span class="counter">90</span>%</p>
+                                      </div>
+                                  </div>
+                                  <div class="skill-bar">
+                                      <div class="bar-inner">
+                                          <div class="bar progress-line" data-progress="90%"></div>
+                                      </div>
+                                  </div>
+                              </div> <!--===== Skill Item =====-->
+                              <div class="skill-item">
+                                <div class="skill-header">
+                                    <h6 class="skill-title">Best-Content</h6>
+                                    <div class="skill-percentage">
+                                        <p><span class="counter">95</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-progress="95%"></div>
+                                    </div>
+                                </div>
+                            </div> <!--===== Skill Item =====-->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h6 class="skill-title">Timely-Deliver</h6>
+                                    <div class="skill-percentage">
+                                        <p><span class="counter">85</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-progress="80%"></div>
+                                    </div>
+                                </div>
+                            </div> <!--===== Skill Item =====-->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h6 class="skill-title">In-Good-Budgets</h6>
+                                    <div class="skill-percentage">
+                                        <p><span class="counter">90</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-progress="90%"></div>
+                                    </div>
+                                </div>
+                            </div> <!--===== Skill Item =====-->
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--===== About Section End =====-->
+      <!--===== Services Section Start =====-->
+<section class="service-section section-padding" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="section-title text-center">
+                <h5 class="sub-title">My Expertise</h5>
+                <h2 class="main-title">Professional Web Solutions</h2>
+                <div class="divider">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="section-description">I deliver custom digital solutions that help businesses grow online</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!--===== Service Item Start =====-->
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Custom Web Development</h3>
+                    <p>Bespoke websites built with clean code using HTML5, CSS3, JavaScript and modern frameworks tailored to your business needs.</p>
+                    <div class="service-tags">
+                        <span><b>React||</span>
+                        <span>Vue||</span>
+                        <span>Node.js</b></span>
+                    </div>
+                </div>
+            </div>
+            <!--===== Service Item End =====-->
+            
+            <!--===== Service Item Start =====-->
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first websites that adapt perfectly to all devices and screen sizes, ensuring optimal user experience.</p>
+                    <div class="service-tags">
+                        <span><b>Flexbox||</span>
+                        <span>Grid||</span>
+                        <span>Media Queries</b></span>
+                    </div>
+                </div>
+            </div>
+            <!--===== Service Item End =====-->
+            
+            <!--===== Service Item Start =====-->
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Complete online store development with payment gateways, product management and secure checkout systems.</p>
+                    <div class="service-tags">
+                        <span><b>Shopify||</span>
+                        <span>WooCommerce||</span>
+                        <span>MERN Stack</b></span>
+                    </div>
+                </div>
+            </div>
+            <!--===== Service Item End =====-->
+            
+            <!--===== Service Item Start =====-->
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed optimization services to reduce load times, improve SEO rankings and enhance user experience.</p>
+                    <div class="service-tags">
+                        <span><b>Lighthouse||</span>
+                        <span>CDN||</span>
+                        <span>Lazy Loading</b></span>
+                    </div>
+                </div>
+            </div>
+            <!--===== Service Item End =====-->
+            
+            <!--===== Service Item Start =====-->
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO & Analytics</h3>
+                    <p>Technical SEO implementation and analytics setup to help your website rank higher and track performance.</p>
+                    <div class="service-tags">
+                        <span><b>Google Analytics||</span>
+                        <span>Schema Markup||</span>
+                        <span>Search Console</b></span>
+                    </div>
+                </div>
+            </div>
+            <!--===== Service Item End =====-->
+            
+            <!--===== Service Item Start =====-->
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing website maintenance, security updates and technical support packages to keep your site running smoothly.</p>
+                    <div class="service-tags">
+                      <span><b>Updates-</span>
+                        <span>Backups-</span>
+                        <span>Security</b></span>
+                    </div>
+                </div>
+            </div>
+            <!--===== Service Item End =====-->
+        </div>
+        
+        <div class="cta-section text-center">
+            <p>Don't see what you need? <a href="#contact">Let's discuss</a> your project requirements.</p>
+        </div>
+    </div>
+</section>
+<!--===== Services Section End =====-->
+
+       <!--===== Services Section end =====-->
+     
+     <!--===== Portfolio Section Start =====-->
+<section class="portfolio section-padding" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="section-title text-center">
+                <h5 class="sub-title">My Work</h5>
+                <h2 class="main-title">Featured Projects</h2>
+                <div class="divider">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="section-description">Here are some of my recent web development projects</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="portfolio-filter">
+                <button type="button" class="active" data-filter="all">All Projects</button>
+                <button type="button" data-filter="web-app">Web Applications</button>
+                <button type="button" data-filter="ecommerce">E-Commerce</button>
+                <button type="button" data-filter="wordpress">WordPress</button>
+            </div>
+        </div>
+        
+        <div class="row portfolio-items">
+            <!-- Project 1 - Web App -->
+            <div class="portfolio-item" data-category="web-app">
+                <div class="portfolio-item-inner">
+                    <div class="portfolio-img">
+                        <img src="images/portfolio/saas-dashboard (2).jpg" alt="SaaS Dashboard Interface">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Business Analytics Dashboard</h3>
+                                <p>Custom SaaS solution with React.js and Node.js backend</p>
+                                <div class="portfolio-btns">
+                                    <a href="#" class="view-btn">View Details</a>
+                                    <a href="#" class="live-btn">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 - E-Commerce -->
+            <div class="portfolio-item" data-category="ecommerce">
+                <div class="portfolio-item-inner">
+                    <div class="portfolio-img">
+                        <img src="images/portfolio/fasion.jpg" alt="Online Fashion Store">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Fashion E-Commerce Store</h3>
+                                <p>Complete shopping platform with payment gateway integration</p>
+                                <div class="portfolio-btns">
+                                    <a href="#" class="view-btn">View Details</a>
+                                    <a href="#" class="live-btn">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 - WordPress -->
+            <div class="portfolio-item" data-category="wordpress">
+                <div class="portfolio-item-inner">
+                    <div class="portfolio-img">
+                        <img src="images/portfolio/corporate.jpg" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Corporate Website</h3>
+                                <p>Custom WordPress theme with advanced CMS functionality</p>
+                                <div class="portfolio-btns">
+                                    <a href="#" class="view-btn">View Details</a>
+                                    <a href="#" class="live-btn">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 - Web App -->
+            <div class="portfolio-item" data-category="web-app">
+                <div class="portfolio-item-inner">
+                    <div class="portfolio-img">
+                        <img src="images/portfolio/productivity.jpg" alt="Task Management App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Productivity Web App</h3>
+                                <p>Vue.js application with Firebase backend</p>
+                                <div class="portfolio-btns">
+                                    <a href="#" class="view-btn">View Details</a>
+                                    <a href="#" class="live-btn">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 - E-Commerce -->
+            <div class="portfolio-item" data-category="ecommerce">
+                <div class="portfolio-item-inner">
+                    <div class="portfolio-img">
+                        <img src="images/portfolio/electronic-store.jpg" alt="Electronics Store">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Electronics Marketplace</h3>
+                                <p>MERN stack e-commerce solution with admin dashboard</p>
+                                <div class="portfolio-btns">
+                                    <a href="#" class="view-btn">View Details</a>
+                                    <a href="#" class="live-btn">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 - WordPress -->
+            <div class="portfolio-item" data-category="wordpress">
+                <div class="portfolio-item-inner">
+                    <div class="portfolio-img">
+                        <img src="images/portfolio/Restorent.jpg" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Restaurant Website</h3>
+                                <p>WordPress site with online reservation system</p>
+                                <div class="portfolio-btns">
+                                    <a href="#" class="view-btn">View Details</a>
+                                    <a href="#" class="live-btn">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="cta-portfolio text-center">
+                <p>Want to see more? <a href="#contact">Request my full portfolio</a> or <a href="#contact">discuss your project</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===== Portfolio Section End =====-->
+      <!--===== Portfolio Section End =====-->
+      <!--===== Pricing Section Start =====-->
+      <section class="pricing section-padding" id="pricing">
+          <div class="container">
+            <div class="row">
+                <div class="section-title text-align">
+                    <h5 class="sub-title">pricing</h5>
+                    <h3 class="main-title">pricing plans</h3>
+                    <ul class="line">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div> <!--===== Section Title =====-->
+              </div>
+              <div class="row justify-content-center">
+                  <div class="pricing-item">
+                      <div class="pricing-plan">
+                          <div class="pricing-header">
+                              <h3>Basic Website</h3>
+                          </div>
+                          <div class="pricing-price">
+                              <span class="currency">₹</span>
+                              <span class="price">15,000+</span>
+                              <span class="period">one-time</span>
+                          </div>
+                          <div class="pricing-body">
+                              <ul>
+                                  <li><i class="fa fa-check"></i> 4-5 Page Website </li>
+                                  <li><i class="fa fa-check"></i>Basic SEO Setup </li>
+                                  <li><i class="fa fa-check"></i> Mobile Responsive</li>
+                                  <li><i class="fa fa-check"></i>  Contact Form </li>
+                                  <li><i class="fa fa-check"></i>1 Month Support </li>
+                              </ul>
+                          </div>
+                          <div class="pricing-footer">
+                              <a href="#" class="btn-2">get started</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="pricing-item">
+                    <div class="pricing-plan">
+                        <div class="pricing-header">
+                            <h3>Business Website</h3>
+                            <h2 class="best-value">Most Popular</h2>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="currency">₹</span>
+                            <span class="price">30,000+</span>
+                            <span class="period">One-time</span>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><i class="fa fa-check"></i>10-15 Page Website </li>
+                                <li><i class="fa fa-check"></i> CMS Integration</li>
+                                <li><i class="fa fa-check"></i>Advanced SEO </li>
+                                <li><i class="fa fa-check"></i>Custom Design </li>
+                                <li><i class="fa fa-check"></i>3 Months Support </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="btn-1">get started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-plan">
+                        <div class="pricing-header">
+                            <h3>E-Commerce</h3>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="currency">₹</span>
+                            <span class="price">50,000+</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><i class="fa fa-check"></i>Full Online Store</li>
+                                <li><i class="fa fa-check"></i>Payment Gateway </li>
+                                <li><i class="fa fa-check"></i> Product Management</li>
+                                <li><i class="fa fa-check"></i>Inventory System</li>
+                                <li><i class="fa fa-check"></i>  6 Months Support</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="btn-2">get started</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </section>
+      <!--===== Pricing Section End =====-->
+     <!--===== Contact Section Start =====-->
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-align">
+          <h5 class="sub-title">Get Connected</h5>
+          <h3 class="main-title">Contact Me</h3>
+          <ul class="line">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="row">
+        <!-- Contact Info Start -->
+        <div class="contact-item">
+          <div class="contact-item-inner">
+            <i class="fas fa-phone"></i>
+            <span>Phone</span>
+            <p>9116255957</p>
+          </div>
+        </div>
+  
+        <div class="contact-item">
+          <div class="contact-item-inner">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+            <p>bpsingh5957@gmail.com</p>
+          </div>
+        </div>
+  
+        <div class="contact-item">
+          <div class="contact-item-inner">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Address</span>
+            <p>India (UP)</p>
+          </div>
+        </div>
+        <!-- Contact Info End -->
+      </div>
+  
+      <!--===== Contact Form =====-->
+      <div class="row">
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="row">
+              <div class="w-50">
+                <div class="input-group">
+                  <input type="text" name="from_name" placeholder="Your Name" class="input-control" required />
+                </div>
+                <div class="input-group">
+                  <input type="email" name="from_email" placeholder="Your Email" class="input-control" required />
+                </div>
+                <div class="input-group">
+                  <input type="text" name="subject" placeholder="Subject" class="input-control" />
+                </div>
+              </div>
+              <div class="w-50">
+                <div class="input-group">
+                  <textarea name="message" placeholder="Your Message" class="input-control" required></textarea>
+                </div>
+                
+                <div class="input-group d-flex justify-content-end">
+                    <button type="submit" class="btn custom-btn">Send Message</button>
+                  </div>
+                  
+                  
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===== Contact Section End =====-->
+  
+       <!--===== Footer Section Start =====-->
+       <footer class="footer">
+           <div class="container">
+               <div class="row justify-content-center">
+                   <p class="copyright-text">&copy; 2025 by E.r-B.P Singh</p>
+               </div>
+           </div>
+       </footer>
+       <!--===== Footer Section End =====-->
+       <!--===== Lightbox Start =====-->
+      <div class="lightbox">
+          <div class="lightbox-content">
+              <div class="lightbox-close">&times;</div>
+              <img src="images/portfolio/portfolia11.png" onclick="nextItem()" class="lightbox-img" alt="">
+              <div class="lightbox-caption">
+                  <div class="caption-text"></div>
+                  <div class="caption-counter"></div>
+              </div>
+          </div>
+          <div class="lightbox-controls">
+              <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+              <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+          </div>
+      </div>
+      <!--===== Lightbox End =====-->
+      <!--===== Main JS =====-->
+    <script src="js/main.js"></script>
+</body>
+</html>
